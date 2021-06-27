@@ -1,0 +1,170 @@
+Testsuite: test.HumanPlayerTest
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 0,032 sec
+
+------------- Standard Output ---------------
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+../data/ouvriers.txt not found
+../data/batiments.txt not found
+../data/machines.txt not found
+------------- ---------------- ---------------
+Testcase: testGetBoard(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testGetPoint(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testSellAction(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testWork(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testBuyAction(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testGetCoin(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testGetGame(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testGetName(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testRecruitWorker(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testStartBuilding(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+
+Testcase: testGetAction(test.HumanPlayerTest):	Caused an ERROR
+bound must be positive
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at model.Board.createDeckBuilding(Unknown Source)
+	at model.Board.<init>(Unknown Source)
+	at test.HumanPlayerTest.tearUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+

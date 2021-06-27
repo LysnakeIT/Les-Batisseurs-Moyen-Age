@@ -1,0 +1,95 @@
+<project name="Batisseurs" default="run" basedir=".">
+	<description>
+		Projet de fin d'année
+	</description>	
+	<property name="src" location="src"/>
+	<property name="build" location="build"/>
+	<property name="jar"  location="${build}/jar"/>
+	<property name="class"  location="${build}/class"/>
+	<property name="data"  location="data"/>
+	<property name="doc"  location="doc"/>
+	<property name="mainClass" value="GameLauncher"/>
+	<property name="jarName" value="${mainClass}"/>
+	<property name="test" value="${build}/test"/>
+
+	<target name="clean">
+		<delete dir="${build}"/>
+	</target>
+
+	<!-- Classpath -->
+	<path id = "GameLauncher.classpath">
+		<pathelement location = "lib/junit-4.12.jar"/>
+		<pathelement location = "lib/hamcrest-core-1.3.jar"/>
+		<pathelement location = "${build}"/>
+	</path>
+
+	<!-- Créer les répertoires utilisés pour stocker les données -->
+	<target name="init">
+		<mkdir dir="${build}"/>
+		<mkdir dir="${jar}"/>
+		<mkdir dir="${class}"/>
+		<mkdir dir="${test}"/>
+	</target>
+
+	<!-- Compile le code se trouvant dans ${src} et le place dans ${class} -->
+	<target name="compile" depends="init" description = "Compile les fichiers sources">
+		<javac srcdir="${src}" destdir="${class}" includeantruntime="false">
+			<exclude name="test/**"/>
+		</javac>
+	</target>
+
+	<!-- Genere la javaDoc du code  -->
+    <target name="javadoc">
+        <javadoc author="true"
+                 private="true"
+                 destdir="${doc}">
+            <fileset dir="${src}">
+                <include name="**"/>
+            </fileset>
+        </javadoc>
+    </target>
+
+	<!-- Creation du fichier jar  -->
+	<target name="jar" depends="compile" description="Genere le fichier jar">
+        <jar jarfile="${jar}/${jarName}.jar" basedir="${class}">
+			<fileset dir="${data}"/>
+            <manifest>
+                <attribute name="Main-Class" value="${mainClass}"/>
+            </manifest>
+        </jar>
+    </target>
+
+	<!-- Compile le code venant du package test et met le résultat dans le dossier test  -->
+	<target name="test-compile" depends="compile" description = "Compile les tests">
+		<javac srcdir="${src}/test" destdir="${test}" includeantruntime="true">
+			<classpath>
+				<pathelement location="./lib/hamcrest-core-1.3.jar"/>
+				<pathelement location="./lib/junit-4.12.jar"/>
+				<pathelement path="${class}"/>
+                <pathelement path="${java.class.path}"/>
+			</classpath>
+		</javac>
+	</target>
+
+	<!-- Lance les tests  -->
+    <target name="test" depends="test-compile">
+        <junit printsummary="on" haltonfailure="off" fork="true" includeantruntime="true">
+            <classpath>
+                <pathelement location="./lib/hamcrest-core-1.3.jar"/>
+                <pathelement location="./lib/junit-4.12.jar"/>
+                <pathelement path="${test}"/>
+                <pathelement path="${class}"/>
+                <pathelement path="${java.class.path}"/>
+            </classpath>
+            <formatter type="brief"/>
+            <batchtest todir="${test}">
+                <fileset dir="${src}" includes="test/*.java"/>
+            </batchtest>
+        </junit>
+    </target>
+
+		<!-- Lance le fichier JAR  -->
+	<target name="run" depends="jar">
+		<java jar="${jar}/${jarName}.jar" fork="true"/>
+	</target>
+</project>

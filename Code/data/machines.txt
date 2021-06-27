@@ -1,0 +1,8 @@
+Une grue;2;0;0;0;1;0;1;0;1
+Une scie circulaire;0;2;0;0;1;1;0;1;0
+Un instrument de mesure;0;0;2;0;1;1;1;0;0
+Un four à tuiles;0;0;0;2;1;0;1;1;0
+Une grue;3;0;0;0;2;0;2;1;0
+Une scie circulaire;0;3;0;0;2;0;0;2;1
+Un instrument de mesure;0;0;3;0;2;1;0;0;2
+Un four à tuiles;0;0;0;3;2;2;1;0;0
